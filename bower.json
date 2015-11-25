@@ -1,0 +1,16 @@
+{
+  "name": "jquery-accordion",
+  "version": "1.0.0",
+  "homepage": "https://github.com/envato/jquery-accordion",
+  "main": ["js/jquery.accordion.js", "css/jquery.accordion.css"],
+  "ignore": [
+    "**/.*",
+    "*.html",
+    "*.md",
+    "*.json",
+    "*.png",
+    "*.min.js",
+    "test",
+    "tests"
+  ]
+}
