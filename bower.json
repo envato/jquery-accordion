@@ -8,9 +8,7 @@
     "*.html",
     "*.md",
     "*.json",
-    "*.png",
     "*.min.js",
-    "test",
-    "tests"
+    "images"
   ]
 }
