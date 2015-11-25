@@ -9,8 +9,8 @@
     "*.md",
     "*.json",
     "*.min.js",
-    "demo.css"
-    "LICENSE"
+    "demo.css",
+    "LICENSE",
     "images"
   ]
 }
