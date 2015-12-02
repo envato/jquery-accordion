@@ -195,8 +195,12 @@
 
                     // Reset max height and set height to auto to allow dynamic
                     // content sizing until the next accordion interaction
+                    // Use setTimeout to ensure animation has had a chance to finish
+                    setTimeout(function () {
+                        $content.css('max-height', 'none');
+                    }, opts.transitionSpeed);
+
                     $content.css('height', 'auto');
-                    $content.css('max-height', 'none');
                 });
 
                 $accordion.addClass('open');
