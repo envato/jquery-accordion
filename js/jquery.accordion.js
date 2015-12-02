@@ -160,6 +160,10 @@
         function closeAccordion($accordion, $content) {
             $accordion.trigger('accordion.close');
             
+            // Make sure height is recalculated.
+            refreshHeight($accordion);
+            $content.css('max-height');
+
             if(CSStransitions) {
                 if(accordionHasParent) {
                     var $parentAccordions = $accordion.parents('[data-accordion]');
@@ -256,7 +260,7 @@
                 if(opts.singleOpen && $controls.length > 1) {
                     return false;
                 }
-                
+
                 toggleAccordion();
             });
 
