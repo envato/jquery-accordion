@@ -192,6 +192,11 @@
 
                 requestAnimFrame(function() {
                     $content.css('max-height', $content.data('oHeight'));
+
+                    // Reset max height and set height to auto to allow dynamic
+                    // content sizing until the next accordion interaction
+                    $content.css('height', 'auto');
+                    $content.css('max-height', 'none');
                 });
 
                 $accordion.addClass('open');
